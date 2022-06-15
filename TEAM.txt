@@ -1,0 +1,6 @@
+Abhay Prakash --->  Navbar,Home Page
+Lalit Singh --->  Details page of the product
+Tushar tyagi ---> Footer, Cart Page
+Roni Mallick ---> Address page, Payments page
+Robin george ---> Sign in and Sign up
+Abidesh kaumar ---> Super deal page
