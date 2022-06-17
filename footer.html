@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <div id="footer_mainbox">
+        <!-- append footer here -->
+    </div>
+</body>
+</html>
+
+<script type="module" >
+    //footer import part start
+    import footer from "./components/footer.js";
+    document.getElementById("footer_mainbox").innerHTML = footer();
+    // footer import part end
+
+    // write a function to catch value of input tag
+    let form= document.querySelector("form");
+   
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        let Data = {
+            email: form.useremail.value,
+        }
+        useremail.value = '';
+        localStorage.setItem("Email to get 50 Points", JSON.stringify(Data));
+        alert("😊 You added susscessfully 50 coins")
+    });
+</script>

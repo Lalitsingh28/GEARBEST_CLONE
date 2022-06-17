@@ -1,0 +1,194 @@
+
+#bottom{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#bottom>p{
+    background-color: #ffffff;
+    display: inline-block;
+}
+#popular{
+    background-color: #ffffff;
+    border-radius: 1px solid black;
+    padding-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+}
+#tagg{
+    background-color: #ffffff;
+    margin-left: 50px;
+}
+
+*{
+    font-family: openSans, Arial, Helvetia,sans-serif;
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+#logo_footerCart {
+    width: 95%;
+    height:200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+#logo_footerCart > div{
+    width: 75%;
+    height: 180px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-left: 10px;
+    background-color: #ffffff;
+}
+#logo1  {
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff;
+}
+#logo2{
+  width:80px;
+  height:40px;
+  padding-left: 40%;
+  background-color: #ffffff;
+}
+#logo_footerCart > div > h2 {
+    width: 90%;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+#a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+#logo_footerCart > div > h2:hover{
+    color: #fff200b9;
+}
+#logo_footerCart > div  > p {
+    width: 90%;
+    text-align: center;
+    color: #666666;
+    background-color: #ffffff;
+}
+/* second part */
+#footer_search {
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    /* justify-content: space-between; */
+}
+
+#form{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #666666;
+}
+input{
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-top: 24px;
+    height: 30px;
+    width:400px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit{
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    width:150px;
+    padding: 5px 10px  ;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #666666;
+    border: #666666;
+}
+#social_logo > div > img {
+    border-radius: 150px;
+    width: 80%;
+  
+}
+#social_logo {
+    display: flex;
+    /* border: 1px solid; */
+    width:400px;
+    margin: auto;
+    
+}
+
+#footer_info{
+    background-color: #ffffff;
+    width: 95%;
+    height:auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_info > div {
+    background-color: #ffffff;
+/* border: 1px solid; */
+width: 25%;
+}
+#footer_info > div > p {
+    background-color: #ffffff;
+    font-size: 19px;
+    padding-top: 20px;
+    color: #666666;
+}
+#footer_info > div > h2{
+    background-color: #ffffff;
+}
+#footer_info > div > p:hover {
+    text-decoration: underline;
+    font-size: 19px;
+    color: #666666;
+    cursor: pointer;
+}
+#barcode{
+    background-color: #ffffff;
+    display: flex;
+    justify-items: center;
+}
+
+/*  third part  */
+#paymentType_logo{
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 40px;
+}
+#paymentType_logo > img {
+    width: 70px;
+    height: 30px;
+}
