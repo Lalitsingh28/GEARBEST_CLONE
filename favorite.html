@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/842117fefc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+    *{
+        font-family: 'Inter', sans-serif;
+    }
+#container {
+
+display: grid;
+grid-template-columns: repeat(5, auto);
+grid-template-rows: repeat(30, auto);
+row-gap: 10px;
+column-gap: 10px;
+margin-top: 200px;
+margin-left: 70px;
+width:80%;
+
+}
+h5{
+    color:gray;
+   position: absolute;
+  text-decoration: line-through;
+
+}
+
+
+h3{
+    color:#f30240;
+    margin-left: 12px;
+    
+}
+h2{
+    color:black;
+    margin-left: 12px;
+    font-size: small;
+}
+#container>div {
+background-color: white;
+width:230px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+margin:auto;
+height:380px;
+}
+
+
+#container>div>img {
+   width:95%;
+   height:230px;
+ 
+  margin-left: 5px;
+}
+
+
+.removebutton{
+    border:none;
+   margin-left: 0.5%;
+    font-size: medium;
+    width:95px;
+    height:30px;
+    background-color: #464646;
+    color: white;
+   
+   
+  
+   
+}
+.removebutton:hover{
+    background-color: yellow;
+    color: black;
+
+}
+
+.cartbutton{
+    border:none;
+    margin-left: 7%;
+    font-size: medium;
+    width:95px;
+    height:30px;
+    background-color: #464646;
+    color: white;
+}
+.cartbutton:hover{
+    background-color: yellow;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+#bottom{
+    height: auto;
+    width: 100%;
+    margin: auto;
+   
+    margin-bottom: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#bottom>p{
+    background-color: #ffffff;
+    display: inline-block;
+}
+#popular{
+    background-color: #ffffff;
+    border-radius: 1px solid black;
+    padding-left: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+}
+#tagg{
+    background-color: #ffffff;
+    margin-left: 50px;
+}
+
+
+
+#logo_footerCart {
+    width: 95%;
+    height:200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+#logo_footerCart > div{
+    width: 75%;
+    height: 180px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-left: 10px;
+    background-color: #ffffff;
+}
+#logo1  {
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff;
+}
+#logo2{
+  width:80px;
+  height:40px;
+  padding-left: 40%;
+  background-color: #ffffff;
+}
+#logo_footerCart > div > h2 {
+    width: 90%;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+#a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+#logo_footerCart > div > h2:hover{
+    color: #fff200b9;
+}
+#logo_footerCart > div  > p {
+    width: 90%;
+    text-align: center;
+    color: #666666;
+    background-color: #ffffff;
+}
+/* second part */
+#footer_search {
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    /* justify-content: space-between; */
+}
+
+#form{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #666666;
+}
+input{
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    height: 30px;
+    width:400px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit{
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    width:150px;
+    padding: 5px 10px  ;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #666666;
+    border: #666666;
+}
+#social_logo > div > img {
+    border-radius: 150px;
+    width: 80%;
+
+}
+#social_logo {
+    display: flex;
+    /* border: 1px solid; */
+    width:400px;
+    margin: auto;
+
+}
+
+#footer_info{
+    background-color: #ffffff;
+    width: 95%;
+    height:auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_info > div {
+    background-color: #ffffff;
+/* border: 1px solid; */
+width: 25%;
+}
+#footer_info > div > p {
+    background-color: #ffffff;
+    font-size: 12px;
+    
+    color: #666666;
+}
+#footer_info > div > h2{
+    background-color: #ffffff;
+}
+#footer_info > div > p:hover {
+    text-decoration: underline;
+    font-size: 19px;
+    color: #666666;
+    cursor: pointer;
+}
+#barcode{
+    background-color: #ffffff;
+    display: flex;
+    justify-items: center;
+}
+
+/*  third part  */
+#paymentType_logo{
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 40px;
+}
+#paymentType_logo > img {
+    width: 70px;
+    height: 30px;
+} 
+
+</style>
+<body>
+    <div id="container"></div>
+    <div id="footer_mainbox">  </div>
+   
+</body>
+</html>
+
+
+<script type="module">
+
+    //footer import part start
+    import footer from "./components/footer.js";
+    document.getElementById("footer_mainbox").innerHTML = footer();
+
+
+
+
+var cartls = JSON.parse(localStorage.getItem("mens-cart"))
+
+display(cartls)
+
+function display(data){
+
+
+
+data.forEach(function(elem,index){
+   
+    var box=document.createElement("div");
+
+   
+
+    var image=document.createElement("img");
+    image.src=elem.image;
+
+    var id=document.createElement("h3");
+    id.innerText=elem.id
+
+    var desc=document.createElement("h2");
+    desc.innerText=elem.desc
+
+    var price=document.createElement("h3");
+    price.innerText=elem.price
+
+    var prevPrice=document.createElement("h5");
+    prevPrice.innerText=elem.prevPrice
+
+
+    var btn=document.createElement("button")
+    btn.innerHTML=`<i class="fa-solid fa-cart-shopping"></i>`
+    btn.classList.add("cartbutton")
+    btn.style.cursor="pointer"
+    btn.addEventListener("click",function (){
+        addtocart(elem)
+    })
+
+    var btn2=document.createElement("button")
+    btn2.innerHTML=`<i class="fa-regular fa-trash-can"></i>`
+    btn2.classList.add("removebutton")
+    btn2.style.cursor="pointer"
+    btn2.addEventListener("click",function (){
+        remove(elem)
+    })
+
+    box.append(image,btn,btn2,desc,price,prevPrice)
+
+    document.querySelector("#container").append(box)
+
+
+
+})
+
+}
+
+function remove(elem,index) {
+cartls.splice(index,);
+
+localStorage.setItem("mens-cart", JSON.stringify(cartls))
+window.location.reload()
+}
+
+var cartls = JSON.parse(localStorage.getItem("mens-cart")) || []
+function addtocart(elem) {
+cartls.push(elem)
+localStorage.setItem("mens-cart", JSON.stringify(cartls))
+
+alert("product added successfully")
+
+}
+
+
+
+
+</script>
+
+
+
