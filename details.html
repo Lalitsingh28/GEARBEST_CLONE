@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<link rel="stylesheet" href="styles/footer.css">
+<style>
+    *{
+    font-family: 'Roboto', sans-serif;
+      }
+    body{
+         width:90%;
+         margin: auto;
+    }
+    #product{
+        display:flex;
+        margin-top: 20px;
+    }
+    #box1>img{
+        border: 1px solid rgb(170, 166, 166);
+        /* width: 120%; */
+        margin-top: 22px;
+    }
+
+    #box2{
+        margin-left: 50px;
+    }
+    #box2>div:nth-child(2){
+        height: 50px;
+        background-color: whitesmoke;
+    }
+    #box2>div:nth-child(2)>span{
+        margin-right: 70px;
+    }
+    #box2>div:nth-child(2)>span:nth-child(2){
+        margin-right: 20px;
+        font-size: 35px;
+        font-weight: bold;
+        color: #f30240;
+    }
+    #box2>div:nth-child(2)>span:nth-child(3){
+       text-decoration: line-through;
+    }
+    #box2>div:nth-child(3){
+        margin-top: 30px;
+    }
+    #box2>div:nth-child(3)>span:nth-child(2){
+        margin-left: 40px;
+    }
+    #box2>div:nth-child(4){
+        margin-top: 30px;
+    }
+    #box2>div:nth-child(4)>span:nth-child(2){
+        margin-left: 70px;
+        border: 2px solid #f30240;
+        padding: 5px 20px 5px 20px;
+        color: #f30240;
+    }
+    #box2>div:nth-child(5){
+        margin-top: 30px;
+    }
+    #box2>div:nth-child(5)>span:nth-child(2){
+        margin-left: 22px;
+        border: 2px solid #f30240;
+        padding: 5px 20px 5px 20px;
+        color: #f30240;
+    }
+    #box2>div:nth-child(6){
+        margin-top: 30px;
+    }
+    #box2>div:nth-child(6)>span:nth-child(2){
+        margin-left: 70px;
+    }
+
+    #box2>div:last-child{
+        display: flex;
+    }
+    #box2>div:last-child>img{
+        width:60px;
+        height: 20px;
+        padding: 8px;
+        border: 1px solid #a9a5a5;
+        margin-left: 5px;
+    }
+    #box2>div:last-child>p{
+        margin-left: 18px;
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    button:nth-child(7){
+        background-color: #f30240;
+        color: white;
+        border: none;
+        padding: 10px 25px 10px 25px;
+    }
+    button:nth-child(8){
+        border:3px solid #f30240;
+        color: #f30240;
+        padding: 7px 25px 7px 25px;
+        margin-left: 10px;
+    }
+    span,p{
+        font-size: 18px;
+    }
+    span{
+        color: #666666;
+    }
+    p{
+        cursor: pointer;
+    }
+    #images>img{
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+    hr{
+        margin-top: 40px;
+    }
+</style>
+<body>
+    <div id="product">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+    <hr>
+    <div id="images"></div>
+    <div id="footer_mainbox">
+        <!-- append footer here -->
+    </div>
+</body>
+</html>
+
+<script type="module">
+
+
+    import footer from "./components/footer.js";
+    document.getElementById("footer_mainbox").innerHTML = footer();
+    
+    var cartls = JSON.parse(localStorage.getItem("mens-cart"))
+
+  let arr = JSON.parse(localStorage.getItem("productDetails"))||[]
+console.log(arr)
+
+  displayData(arr)
+
+  function displayData(data){
+    // data.forEach(function(elem){
+
+    let img = document.createElement('img')
+    img.src = data.image;
+    
+    document.getElementById('box1').append(img)
+
+    let name = document.createElement('h2')
+    name.innerText = data.desc;
+    // let review = document.createElement('p')
+    // review.innerText = "⭐⭐☆ ☆ ☆"
+    let price = document.createElement('span')
+    price.innerText = "Price: ";
+    let pric = document.createElement('span')
+    pric.innerText = data.price;
+    let price2 = document.createElement('span')
+    price2.innerText =data.prevPrice;
+
+    let div1 = document.createElement('div')
+    div1.append(price,pric,price2)
+
+    
+    let shipping = document.createElement('span')
+    shipping.innerText = 'Shipping: '
+    let shiping = document.createElement('span')
+    shiping.innerText = 'Ship Between : Jun 20 - Jul 02, Estimated Shipping Time: 15-60 business days';
+    
+    let div2 = document.createElement('div')
+    div2.append(shipping,shiping)
+
+    let colors = document.createElement('span')
+    colors.innerText = 'Color: '
+    let color = document.createElement('span')
+    color.innerText = 'Multi'
+
+    let div3 = document.createElement('div')
+    div3.append(colors,color);
+
+    let from = document.createElement('span')
+    from.innerText = 'Ships From: '
+    let ships = document.createElement('span')
+    ships.innerText = 'China'
+
+    let div4 = document.createElement('div')
+    div4.append(from,ships);
+
+    let qty = document.createElement('span')
+    qty.innerText = 'QTY: '
+    let n = document.createElement('span')
+    n.innerText = '1'
+
+    let div5 = document.createElement('div')
+    div5.append(qty,n)
+
+    let addtocart = document.createElement('button')
+    addtocart.innerText = "Add to Cart";
+    addtocart.addEventListener('click', function(){
+        cart(data)
+    })
+
+    let buynow = document.createElement('button')
+    buynow.innerText = 'Buy Now';
+    buynow.addEventListener('click', function(){
+        buy(data)
+    })
+    
+    let addtofavorites = document.createElement('p')
+    addtofavorites.innerText = '♡ Add to Favourites'
+    addtofavorites.addEventListener('click', function(){
+        favo(data)
+    })
+
+    let paypal = document.createElement('img')
+    paypal.src = 'https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png'
+
+    let visa =  document.createElement('img')
+    visa.src = 'https://uidesign.gbtcdn.com/GB/images/others/GB_brandpic/mm/VISA.png?imbypass=true'
+
+    let mastercard = document.createElement('img')
+    mastercard.src = 'https://uidesign.gbtcdn.com/GB/images/others/GB_brandpic/mm/mc_vrt_opt_pos_73_2x.png?imbypass=true'
+
+    let tax = document.createElement('p')
+    tax.innerText = 'Tax Info';
+
+    let priceprotection = document.createElement('p')
+    priceprotection.innerText = 'Price Protection'
+
+    let pricediclare = document.createElement('p')
+    pricediclare.innerText = 'Price Disclaimer'
+
+    let report = document.createElement('p')
+    report.innerText = 'Report Item'
+
+    let div6 = document.createElement('div')
+    div6.append(paypal,visa,mastercard,tax,priceprotection,pricediclare,report)
+
+
+    let image1 = document.createElement('img')
+    image1.src = data.image1
+    let image2 = document.createElement('img')
+    image2.src = data.image2
+    let image3 = document.createElement('img')
+    image3.src = data.image3
+    let image4 = document.createElement('img')
+    image4.src = data.image4
+    let image5 = document.createElement('img')
+    image5.src = data.image5
+
+    document.getElementById('images').append(image1,image2,image3,image4,image5)
+
+    document.getElementById('box2').append(name,div1,div2,div3,div4,div5,addtocart,buynow,addtofavorites,div6)
+
+    // })
+   
+
+
+
+    function cart(elem) {
+            // array.push(elem)
+            let cart = JSON.parse(localStorage.getItem('cartdata'))||[];
+            cart.push(elem)
+            localStorage.setItem("cartdata", JSON.stringify(cart))
+            // console.log(array)
+            // window.location.href = "cart.html"
+        }
+        function buy(elem) {
+            // buy.push(elem)
+
+            localStorage.setItem("buy", JSON.stringify(elem))
+            // console.log(arrwish)
+            window.location.href = "cart.html"
+        }    
+
+        var cartls = JSON.parse(localStorage.getItem("mens-cart")) || []
+        function favo(data){
+            cartls.push(data)
+            localStorage.setItem("mens-cart", JSON.stringify(cartls))
+            window.location.href = "favorite.html"
+        }
+  }
+
+
+
+
+
+</script>

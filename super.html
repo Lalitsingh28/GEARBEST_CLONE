@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/842117fefc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        font-family: 'Inter', sans-serif;
+    }
+
+
+
+#container {
+
+display: grid;
+grid-template-columns: repeat(5, auto);
+grid-template-rows: repeat(30, auto);
+row-gap: 10px;
+column-gap: 10px;
+margin-top: 20px;
+margin-left: 70px;
+width:80%;
+
+}
+h5{
+    color:gray;
+   
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+
+
+h3{
+    color:#f30240;
+    
+}
+h2{
+    color:black;
+  
+    font-size: small;
+}
+
+.cartbutton>i{
+    color:red;
+    
+
+}
+.cartbutton{
+    border:none;
+    background-color: white;
+    font-size: medium;
+    margin-left: 85%;
+}
+
+
+#container>div {
+background-color: white;
+width:230px;
+
+margin:auto;
+height:400px;
+}
+#container>div>img {
+   width:95%;
+   height:230px;
+ 
+  margin-left: 5px;
+}
+
+#tim1{
+    display: block;
+    justify-content: space-around;
+    background-color :#3e3434;
+    width:35%;
+    text-align: center;
+    color:#8f8787;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+#tim2{
+
+    display: block;
+    justify-content: space-around;
+    background: linear-gradient(180deg,#ff7147,#f30240);
+    width:35%;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#coming{
+    display: block;
+    justify-content: space-around;
+    background-color: #3e3434;
+    width:35%;
+    text-align: center;
+    color:#8f8787;
+    font-weight: bold;
+    font-size: 20px;
+ 
+    
+
+
+}
+
+#timer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+   height:70px;
+ 
+    
+}
+
+div>p{
+    margin-top: 5px;
+ 
+}
+
+body{
+    background-color: rgb(243, 237, 237);
+}
+
+
+
+
+
+
+
+
+
+
+#bottom{
+    height: auto;
+    width: 100%;
+    margin: auto;
+   
+    margin-bottom: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#bottom>p{
+    background-color: #ffffff;
+    display: inline-block;
+}
+#popular{
+    background-color: #ffffff;
+    border-radius: 1px solid black;
+    padding-left: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: #ffffff;
+}
+a:hover{
+    text-decoration: underline;
+}
+#tagg{
+    background-color: #ffffff;
+    margin-left: 50px;
+}
+
+
+
+#logo_footerCart {
+    width: 95%;
+    height:200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+#logo_footerCart > div{
+    width: 75%;
+    height: 180px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-left: 10px;
+    background-color: #ffffff;
+}
+#logo1  {
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff;
+}
+#logo2{
+  width:80px;
+  height:40px;
+  padding-left: 40%;
+  background-color: #ffffff;
+}
+#logo_footerCart > div > h2 {
+    width: 90%;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+#a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+#logo_footerCart > div > h2:hover{
+    color: #fff200b9;
+}
+#logo_footerCart > div  > p {
+    width: 90%;
+    text-align: center;
+    color: #666666;
+    background-color: #ffffff;
+}
+/* second part */
+#footer_search {
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    /* justify-content: space-between; */
+}
+
+#form{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #666666;
+}
+input{
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    height: 30px;
+    width:400px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit{
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    width:150px;
+    padding: 5px 10px  ;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    outline: none;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #666666;
+    border: #666666;
+}
+#social_logo > div > img {
+    border-radius: 150px;
+    width: 80%;
+
+}
+#social_logo {
+    display: flex;
+    /* border: 1px solid; */
+    width:400px;
+    margin: auto;
+
+}
+
+#footer_info{
+    background-color: #ffffff;
+    width: 95%;
+    height:auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_info > div {
+    background-color: #ffffff;
+/* border: 1px solid; */
+width: 25%;
+}
+#footer_info > div > p {
+    background-color: #ffffff;
+    font-size: 12px;
+    
+    color: #666666;
+}
+#footer_info > div > h2{
+    background-color: #ffffff;
+}
+#footer_info > div > p:hover {
+    text-decoration: underline;
+    font-size: 19px;
+    color: #666666;
+    cursor: pointer;
+}
+#barcode{
+    background-color: #ffffff;
+    display: flex;
+    justify-items: center;
+}
+
+/*  third part  */
+#paymentType_logo{
+    width: 95%;
+    height:90px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 40px;
+}
+#paymentType_logo > img {
+    width: 70px;
+    height: 30px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+
+    <div id="timer">
+       
+        <div id="tim1">
+       
+         <p>Ends In:</p>
+     
+         <p id="timer1"></p>
+       
+        
+     </div>
+     
+     <br>
+     <div id="tim2">
+       
+        <p>Ends In:</p>
+        
+        <p id="timer2"></p>
+     </div>
+     
+     <div id="coming">
+     
+         
+         <p>Coming Soon:</p>
+         <p>25/22  21:33</p>
+        
+     </div>
+     
+     </div>
+   
+    <div id="container">
+      
+
+
+        </div>
+
+        <div id="footer_mainbox">  </div>
+ 
+</body>
+</html>
+
+<script type="module">
+
+    //footer import part start
+    import footer from "./components/footer.js";
+    document.getElementById("footer_mainbox").innerHTML = footer();
+
+
+
+var product= [
+    {
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16534/goods_img-v1/ed230b4b2700.jpg",
+    desc:"Original Xiaomi Mi Band 7 / 7 NFC Smart Wristband 1.62 inch",
+    price:"48.99",
+    prevPrice:"57.25",
+    image1:"https://des.gbtcdn.com/storage/desc/6878391336429613056/16534/92e58023e922.jpg",
+    image2: "https://des.gbtcdn.com/storage/desc/6878391336429613056/16534/cbbe67d80083.jpg",
+    image3: "https://des.gbtcdn.com/storage/desc/6878391336429613056/16534/0d28e4304fb9.jpg",
+    image4: "https://des.gbtcdn.com/storage/desc/6878391336429613056/16534/d01c5947222f.jpg",
+    image5: "https://des.gbtcdn.com/storage/desc/6878391336429613056/16534/effc588ac191.jpg",
+},
+{
+    id:"2",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6926471294045319168/16529/goods_img-v1/8ad475fc01f3.jpg",
+    desc:"WT09 Active Noise Cancelling Headphones Bluetooth 5.1",
+    price:"18.72",
+    prevPrice:"20.25",
+    image1: "https://des.gbtcdn.com/storage/item/6926471294045319168/16529/3d6e38409cdc.jpg",
+    image2: "https://des.gbtcdn.com/storage/item/6926471294045319168/16529/9f226c1f4c2a.jpg",
+    image3: "https://des.gbtcdn.com/storage/item/6926471294045319168/16529/845c6ba8826b.jpg",
+    image4: "https://des.gbtcdn.com/storage/item/6926471294045319168/16529/cde2b4094769.jpg",
+    image5: "https://des.gbtcdn.com/storage/item/6926471294045319168/16529/451894b397e6.jpg",
+},
+{
+    id:"3",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6878400698325856256/16419/goods_img-v1/22549f61229b.jpg",
+    desc:"Original Xiaomi Smart Magic Cube Bluetooth 3D Dynamic",
+    price:"19.99",
+    prevPrice:"23.52",
+    image1: 'https://des.gbtcdn.com/storage/desc/6878400698325856256/16419/7a602c061b4c.jpg',
+    image2: 'https://des.gbtcdn.com/storage/desc/6878400698325856256/16419/97f5b45dba23.jpg',
+    image3: 'https://des.gbtcdn.com/storage/desc/6878400698325856256/16419/058c362782d7.jpg',
+    image4: 'https://des.gbtcdn.com/storage/desc/6878400698325856256/16419/2d22c582281b.jpg',
+    image5: 'https://des.gbtcdn.com/storage/desc/6878400698325856256/16419/e72cdff75f93.jpg',
+},
+{
+    id:"4",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16539/goods_img-v1/7a6e1bdf0f46.jpg",
+    desc:"Haylou RS4 smart watches Global version Blood oxygen",
+    price:"49.99",
+    prevPrice:"56.23",
+    image1: "https://des.gbtcdn.com/storage/desc/6870745450383863808/16539/b5cd409ffba6.jpg",
+    image2: "https://des.gbtcdn.com/storage/desc/6870745450383863808/16539/0601df31ac6a.jpg",
+    image3: "https://des.gbtcdn.com/storage/desc/6870745450383863808/16539/e6be592ec5ce.jpg",
+    image4: "https://des.gbtcdn.com/storage/desc/6870745450383863808/16539/8ad0df6cf989.jpg",
+    image5: "https://des.gbtcdn.com/storage/desc/6870745450383863808/16539/fc78750ded0a.jpg",
+},
+{
+    id:"5",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6896502277952172032/16460/goods_img-v3/5b9d1b9f7836.jpg",
+    desc:"ENGWE Bike C20 PRO Adult Electric Bike 36V19.2AH City",
+    price:"1000.00",
+    prevPrice:"1200.00",
+    image1: "https://des.gbtcdn.com/storage/item/6896502277952172032/16460/9fc3cc413b33.jpg",
+    image2: "https://des.gbtcdn.com/storage/item/6896502277952172032/16460/71c11160a7a9.jpg",
+    image3: "https://des.gbtcdn.com/storage/item/6896502277952172032/16460/1890ec304b81.jpg",
+    image4: "https://des.gbtcdn.com/storage/item/6896502277952172032/16460/54a32329cf0c.jpg",
+    image5: "https://des.gbtcdn.com/storage/item/6896502277952172032/16460/0409d3ba1c20.jpg"
+},
+{
+    id:"6",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img-v1/126354806df6.jpg",
+    desc:"Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For",
+    price:"2.59",
+    prevPrice:"3.00",
+   
+},
+{
+    id:"7",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_img-v5/6233d35f6f8a.jpg",
+    desc:"Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell",
+    price:"107.99",
+    prevPrice:"115.50"
+},
+{
+    id:"8",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16545/goods_img-v3/49bbbbea2c5b.jpg",
+    desc:"Xiaomi Fan 2 Smart Standing double layer fan blade Portable",
+    price:"69.99",
+    prevPrice:"75.60"
+},
+{
+    id:"9",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16487/goods_thumb_220-v1/9bd2c3157fee.jpg",
+    desc:"2022 New Smartphone 7.3 Inch MIX4 72MP Camera Unlock",
+    price:"114.30",
+    prevPrice:"120.00"
+},
+{
+    id:"10",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_img-v3/31d0d9d6c843.jpg",
+    desc:"A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision",
+    price:"10.68",
+    prevPrice:"13.20"
+},
+{
+    id:"11",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16519/goods_img-v1/ad5af71dbbf9.jpg",
+    desc:"WalkingPad R2 Treadmill Smart APP LED Touch Panel Remote",
+    price:"585.00",
+    prevPrice:"600.00"
+},
+{
+    id:"12",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16488/goods_img-v1/78ad914ae7ca.jpg",
+    desc:"4-color TFT screen Finger Clip Type Oximeter Pulse Oximetry",
+    price:"15.92",
+    prevPrice:"17.69"
+},
+{
+    id:"13",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_img-v3/a06e3d5ad873.jpg",
+    desc:"Original Xiaomi Backpack 7L/10L/15L/20L Travel Light",
+    price:"13.99",
+    prevPrice:"18.64"
+},
+{
+    id:"14",
+    image:"https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16488/goods_img-v5/b1790ebe72cd.jpg",
+    desc:"Xiaomi Redmi Buds 3 Lite TWS Bluetooth 5.2 Earphone",
+    price:"20.86",
+    prevPrice:"21.00"
+},
+{
+    id:"15",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6898654298117435392/16531/goods_img-v1/ea9ddbe7643e.jpg",
+    desc:"Xiaomi 2022 Bluetooth 5.0 Headsets Wireless Earphone",
+    price:"9.90",
+    prevPrice:"13.00"
+},
+{
+    id:"16",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6904007303549349888/16474/goods_img-v1/394534e30d4e.jpg",
+    desc:"QIDI TECH X-MAX Large Size Intelligent Industrial Grade 3D",
+    price:"949.00",
+    prevPrice:"1000.00"
+},
+{
+    id:"17",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16418/goods_img-v1/42f52c167490.jpg",
+    desc:"Yeelight 1SE E27 6W RGBW AC 100 - 240V Smart LED Bulb",
+    price:"24.99",
+    prevPrice:"29.00"
+},
+{
+    id:"18",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16508/goods_img-v1/83e81faaf67b.jpg",
+    desc:"V9 Wireless Bluetooth CSR V4.1 Headset Sports Headphone",
+    price:"11.90",
+    prevPrice:"14.00"
+},
+{
+    id:"19",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_img-v1/965097e8a620.jpg",
+    desc:"Aqara Smart Temperature Humidity Sensor Zigbee",
+    price:"17.99",
+    prevPrice:"19.00"
+},
+{
+    id:"20",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16456/goods_img-v1/937ce184d834.jpg",
+    desc:"Midea S8+ Robot Vacuum Cleaner for Home Electrolysis",
+    price:"1260.23",
+    prevPrice:"1500.00"
+},
+{
+    id:"21",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6878025592978206720/16498/goods_img-v5/eca3dcc2ab20.jpg",
+    desc:"L900 PRO 5G WIFI FPV Foldable GPS RC Drone Quadcopter with",
+    price:"86.99",
+    prevPrice:"100.78"
+},
+{
+    id:"22",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_img-v1/8fc8853ff3b3.jpg",
+    desc:"Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2",
+    price:"19.99",
+    prevPrice:"22.00"
+},
+{
+    id:"23",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16516/goods_img-v3/ce8cec017eca.jpg",
+    desc:"Original Xiaomi Mitu Cubes Spinner Finger Bricks",
+    price:"9.99",
+    prevPrice:"12.00"
+},
+{
+    id:"24",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_img-v5/2f380d04f8f3.jpg",
+    desc:"Original Xiaomi Mi Airdots Air 2 SE TWS Bluetooth Earphone",
+    price:"25.99",
+    prevPrice:"30.00"
+},
+{
+    id:"25",
+    image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16487/goods_thumb_220-v1/9bd2c3157fee.jpg",
+    desc:"Mijia Honeywell Fire Alarm Smoke Detector Sensor Audible",
+    price:"39.99",
+    prevPrice:"45.00",
+  
+},
+
+
+
+
+
+] 
+
+// localStorage.setItem("productlist",JSON.stringify(product))
+
+display(product)
+
+
+
+
+
+
+
+function display(data){
+ let container= document.getElementById("container");
+ container.innerHTML=null;
+
+    
+    data.forEach(function(elem){
+       
+        var box=document.createElement("div");
+
+       
+
+        var image=document.createElement("img");
+        image.src=elem.image;
+        image.addEventListener('click',function(){
+            redirectFun(elem)
+        })
+
+        var id=document.createElement("h3");
+        id.innerText=elem.id
+
+        var desc=document.createElement("h2");
+        desc.innerText=elem.desc
+
+        var price=document.createElement("h3");
+        price.innerText=elem.price
+
+        var prevPrice=document.createElement("h5");
+        prevPrice.innerText=elem.prevPrice
+
+
+        var btn=document.createElement("button")
+        btn.innerHTML=`<i class="fa-solid fa-cart-shopping"></i>`
+        btn.classList.add("cartbutton")
+        btn.style.cursor="pointer"
+        btn.addEventListener("click",function (){
+            addtocart(elem)
+        })
+
+        box.append(image,desc,price,prevPrice,btn)
+
+        document.querySelector("#container").append(box)
+
+ 
+
+    })
+   
+}
+function redirectFun(elem){
+    localStorage.setItem('productDetails',JSON.stringify(elem))
+    window.location.href = "details.html"
+}
+
+var cartls = JSON.parse(localStorage.getItem("mens-cart")) || []
+function addtocart(elem) {
+    cartls.push(elem)
+    localStorage.setItem("mens-cart", JSON.stringify(cartls))
+
+    alert("product added successfully")
+   
+}
+
+
+// Set the date we're counting down to
+var countDown = new Date("June 25, 2023 10:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDown - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer1").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer1").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("june 20, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer2").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer2").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+    </script>
+
+
+    
