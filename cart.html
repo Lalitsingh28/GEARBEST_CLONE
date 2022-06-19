@@ -11,7 +11,11 @@
 <body>
     <header id="header">
         <div id="img">
+<<<<<<< HEAD
             <a href="super.html"><img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="logo" /></a>
+=======
+            <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="logo" />
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
 
         </div>
         <div id="coruncey">
@@ -70,7 +74,11 @@
             <h1 id="amount_total"></h1>
         </div>
         <div>
+<<<<<<< HEAD
             <a href="super.html"><button id="continue_shoping">Continue Shopping ></button></a>
+=======
+            <a href="index.html"><button id="continue_shoping">Continue Shopping ></button></a>
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
         </div>
         <div id="div4">
             <img src="https://css.gbtcdn.com/imagecache/gbw/img/buynow_en.93a4b6e.png" /> <span>or</span>
@@ -79,7 +87,11 @@
             <img src="https://css.gbtcdn.com/imagecache/gbw/img/paypal_credit_en.10b3871.png" /> <span>or</span>
         </div>
         <div id="check">
+<<<<<<< HEAD
             <a href="address.html"><button id="checkout">Checkout</button></a>
+=======
+            <a href="index.html"><button id="checkout">Checkout</button></a>
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
         </div>
     </div>
 
@@ -109,7 +121,11 @@
     document.getElementById("footer_mainbox").innerHTML = footer();
     // footer import part end
 
+<<<<<<< HEAD
     let display = JSON.parse(localStorage.getItem("cartdata"))||[];
+=======
+    let display = JSON.parse(localStorage.getItem("cartdata"));
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
     displaydata(display);
 
     function displaydata(data) {
@@ -154,8 +170,13 @@
 
 
             img.src = elem.image;
+<<<<<<< HEAD
             title.innerText = elem.desc;
             // description.innerText = elem.description;
+=======
+            title.innerText = elem.title;
+            description.innerText = elem.description;
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
             price.innerText = "$" + elem.price;
             // ************************************
             btn_inc.innerText = "+";
@@ -166,9 +187,12 @@
             btn1.innerText = "Edit";
             btn.innerText = "Delete";
             btn2.innerText = "Favorites";
+<<<<<<< HEAD
             btn2.addEventListener('click',function(){
                 fav()
             })
+=======
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
 
 
             sum2 = sum2 + elem.price;
@@ -235,8 +259,12 @@
       localStorage.setItem("cartdata", JSON.stringify(display));
       window.location.reload();
     }
+<<<<<<< HEAD
    
    function fav(){
     window.location.href = "favorite.html"
    }
+=======
+
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
 </script>

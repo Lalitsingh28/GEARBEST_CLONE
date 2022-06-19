@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="common.css"> -->
+    <style>
+
+img{
+    width:10px;
+    height: 20px;
+}
+*{
+    background-color: whitesmoke;
+
+}
+#full{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid brown; */
+   flex-shrink: 1;
+}
+#register{
+    width: 25%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+text-align: center;
+padding:30px ;
+display: block;
+padding-top: 60px;
+margin-left:65% ;
+
+background-color:#FFFFFF;
+
+}
+
+form{
+    width: 80%;
+    height: auto;
+/* border: 1px solid brown; */
+margin: auto;
+
+
+}
+input{
+    width:90%;
+    height:30px ;
+    margin-bottom: 10px;
+    background-color:#FFFFFF;
+    border: 1px solid grey;
+   
+}
+.anchor_tag{
+    width: 80%;
+    height: 20px;
+  margin-bottom: 20px;
+margin-left: 0px;
+
+}
+
+#check_box>input{
+
+    margin-bottom:20px;
+}
+#btn{
+    background-color:#FFDA00;
+    border: none;
+}
+#check{
+    display: block;
+}
+#cap{
+  display: flex;
+    flex-shrink: 1;
+    /* border: 1px solid grey; */
+    width: 92%;
+    height:30px;
+    margin-left: 10px;
+}
+#cap>input{
+    width:60%;
+    height: 100%;
+    border: 1px solid grey;
+}
+#cap>label>img{
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+.anchor_tag>a{
+text-decoration :none;
+font-size:18px ;
+margin-left: 25px;
+font-weight: 600 ;
+}
+a:link{
+    text-decoration: none;
+    color: grey;
+    font-size: 600;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+    font-size: 600 
+}
+a:hover{
+    text-decoration: underline;
+    color: #FFDA00;
+}
+#check_box{
+    display: flex;
+    flex-shrink: 1;
+    /* border: 1px solid grey; */
+    width: 91%;
+    height:30px;
+    margin: 10px 0px 10px 10px ;
+}
+#check_box>#check{
+    margin-left: -50px;
+    height: 75%;
+    display: block;
+
+}
+#check_box>span{
+    margin-left: -60px;
+    /* width: 100%; */
+    font-size: 16px;
+}
+#check_box>#check1{
+    margin-left: -90px;
+    height: 75%;
+    display: block;
+
+}
+#check_box>#mg{
+    margin-left: -100px;
+    font-size: 15px;
+}
+#mg>img{
+    width:30px;
+    height: 30px;
+    margin-bottom: -14px;
+}
+#logo{
+    
+    width: 200px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    margin: 40px 0px 0px 100px;
+}
+#img1{
+    width: 100%;
+    height: 100%;
+   
+}
+#add{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    /* margin: 300px 200px 50px 200px; */
+     margin: 0px 0px -200px 300px;
+     
+}
+#add>div{
+    margin: auto;
+}
+.p1{
+    width: 50px;
+    height:100%;
+    display: block;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div id="full">
+    <div id="logo">
+<a href=""><img id="img1" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="gearbest"></a>
+    </div>
+   
+    <div id="register">
+
+    <form action="" id="form">
+        <div class="anchor_tag">
+            <a href="signup.html">REGISTER</a>
+            <a href="signin.html">SIGN IN</a>
+            
+          </div>
+<input type="text" id="mail" placeholder="Email" required>
+<input type="text" id="passwd" placeholder="Create password" required>
+<input type="text" id="repasswd" placeholder="Re-type password" required>
+    <div id="cap">
+      <input type="text" id="captcha" placeholder="Enter Code" required>
+      <label for=""><img src="https://login.gearbest.com/captcha/default?0.007532893134680307" alt="captcha"></label>
+    </div>
+<div id="check_box">
+   
+<input type="checkbox" id="check" onchange="myfun(this)">
+<span>"I agree to Gearbest" <a href="https://www.gearbest.com/about/terms-and-conditions.html">Terms and conditions </a> and <a href="https://www.gearbest.com/about/privacy-policy.html">Privacy Policicies.</a></span>
+</div>
+
+<input type="submit" id="btn" disabled="disabled" value="Register">
+        </form>
+<span>or connect via </span><br>
+<button id="btn1"><a href=""><img id="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="google pic"></a></button>
+    </div>
+<div id="add">
+    <div>
+    <a target="_blank" href="https://www.gearbest.com/about/warranty-and-return.html"><img class="p1" src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png" alt=""></a>
+</div>
+<div>
+<a target="_blank" href="https://www.trustedsite.com/for-consumers"> <img class="p1" src="	https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt=""></a>
+</div>
+<div>
+<a target="_blank" href="https://www.paypal.com/us/smarthelp/contact-us"> <img class="p1" src="	https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt=""></a>
+</div>
+</div>
+</div>
+</body>
+
+</html>
+<script src="./signup.js">
+
+// <!-- https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png -->
+
+
+
+
+
+</script>

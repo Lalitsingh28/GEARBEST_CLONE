@@ -20,7 +20,11 @@ console.log("yes")
   else if(userdata.passwd==data.pass && userdata.email==data.email)
   {
     localStorage.setItem("sign",JSON.stringify(userdata))
+<<<<<<< HEAD
     window.location.href="super.html"
+=======
+    window.location.href="home.html"
+>>>>>>> 290353e59dfcc3a2cab752c1cc53199b04e50fed
 
     alert("Signin Successfully");
   }
